@@ -18,7 +18,7 @@ public class LinearAndBinary {
 
     public static int binarySearch(int[] nums, int target, int left, int right) {  //binary search
 
-        int steps=0;
+        int steps=0; // To Find How Many Steps It Takes To Find The Element
 
         while(left<=right){
 
@@ -44,7 +44,8 @@ public class LinearAndBinary {
     }
 
     public static int linearSearch(int[] nums, int target) { //Linear Search
-        int step=0;
+
+        int step=0; // To Find How Many Steps It Takes To Find The Element
 
         for(int i=0;i<nums.length;i++) {
 
@@ -53,6 +54,7 @@ public class LinearAndBinary {
             if (nums[i] == target) {
 
                 System.out.println("Steps taken by linear search "+step);
+
                 return i;
             }
         }
